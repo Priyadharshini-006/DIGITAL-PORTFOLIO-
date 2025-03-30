@@ -39,34 +39,3 @@ h1{
  box-shadow: 0 0 40px #ED2279;
   position: relative;
 }
-.content button{
-    width: 30%;
-    margin: 40px auto;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: black;
-    box-shadow: 0 0 4px #ED2279;
-    border: 2px solid #ED2279;
-    color: white;
-    text-shadow: 0 0 9px white;
-    font-size: 100%;
-    font-weight: 70;
-    border-radius: 5px;
-    transition: 0.2s linear;
-    position: relative;
-    left: 0px;
-    text-align: center;
-}
-.content button:hover{
- scale: 1.1;
- color: white;
- text-align: center;
- padding: 10px 20px;
- border: 2px solid #ED2279;
- background-color: transparent;
- font-weight: 70;
- box-shadow: 0 0 40px #ED2279;
-}
-
-
