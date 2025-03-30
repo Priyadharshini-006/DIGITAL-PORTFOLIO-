@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.logo span{
+    color:  #ED2279;
+    text-shadow: 0 0 10px  #ED2279;
+}
+.hamburg, .cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: black;
+    font-size: 2rem;
+    display: none;
+}
+.nav-container .links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.nav-container .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color:  #ED2279;
+    text-decoration: none;
+    font-weight: 500;
+    transform: 0.3s linear;
+    padding: 30px;
+}
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color:  #ED2279;
+    transition: 0.2s linear;
+}
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+.nav-container .contact-btn{
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid  #ED2279;
+    transition: 0.2s linear;
+}
+.nav-container .contact-btn a{
+    color: white;
+    transition: 0.3s linear;
+}
+.nav-container .contact-btn:hover, .nav-container .contact-btn:hover a{
+    color: white;
+}
+.nav-container .links a:hover{
+    color:  #ED2279;
+}
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: brightness(40%) blur(3px);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+}
+.dropdown .links a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+.dropdown .links a:hover{
+    background-color:  #ED2279;
+}
+button {
+    background-color:  #ED2279;
+    color: Black;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+  font-size: x-large;
+}   
+
+button a {
+    color: black;
+   padding: 8px 14px;
+   text-decoration: none; 
+    
+}
+body {
+    color: white;
+    background: black;
+}
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+}
+.sub-title span {
+    color:  #ED2279;
+    text-shadow: 0 0 6px  #ED2279;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1 {
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+.heading {
+    text-align: center;
+    text-decoration: white;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    color:  #ED2279;
+    position: relative;
+    left: -290PX;
+    font-size: xx-large;
+}
+.pro{
+        text-align: center;
+        text-decoration: white;
+        text-underline-offset: 10px;
+        text-decoration-thickness: 5px;
+        margin-bottom: 50px;
+        color:  #ED2279;
+        position: relative;
+        left: -50PX;
+        padding-left: 800px;
+        position: relative;
+        left: -1000PX;
+}
+h6 {
+    text-align: center;
+    text-decoration: white;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    color:  #ED2279;
+  font-size: xx-large;
+}
+.bar {
+    font-size: 23px;
+}
+.Technical-bars .bar {
+    margin: 40px 0;
+}
+.Technical-bars .bar:first-child {
+    margin-top: 0;
+}
+.Technical-bars .bar:last-child {
+    margin-bottom: 0;
+}
+.Technical-bars .bar.info {
+    margin-bottom: 5px;
+}
+.Technical-bars .bar.info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.Technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: lavender;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+.Technical-bars .bar .progress-line span {
+    height: 100%;
+    background-color:  #ED2279;
+    text-shadow: 0 0 6px  #ED2279;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span {
+    width: 90%;
+}
+.progress-line.css span {
+    width: 76%;
+}
+.progress-line.javascript span {
+    width: 85%;
+}
+.progress-line.python span {
+    width: 50%;
+}
+.progress-line.java span {
+    width: 75%;
+}
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color:  #ED2279;
+    color: black;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.html span::after {
+    content: "90%";
+}
+.progress-line.css span::after {
+    content: "60%";
+}
+.progress-line.javascript span::after {
+    content: "85%";
+}
+.progress-line.python span::after {
+    content: "50%";
+}
+.progress-line.java span::after {
+    content: "75%";
+}
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: white;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}

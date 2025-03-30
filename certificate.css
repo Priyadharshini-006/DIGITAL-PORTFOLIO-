@@ -1,0 +1,174 @@
+body{
+    background: black;
+}
+.work{
+    background-color: black;
+    color: #ED2279;
+    text-shadow: 0 0 6px #ED2279;
+}
+
+h5{
+    color: #ED2279;
+    text-shadow: 0 0 40px #ED2279;
+    font-size: xx-large;
+}
+.work .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.work .content .card{
+    width: 340px;
+    margin: 15px;
+}
+
+.work .content .card .card-img{
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 50px;
+    box-shadow: 0 0 40px #ED2279;
+}
+
+.work .content .card .card-img img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s linear;
+    box-shadow: 0 0 40px #ED2279;
+}
+
+.work .content .card .card-img img:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 40px #ED2279;
+}
+
+
+
+
+@media (max-width:1040px) {
+    
+    header{
+        padding: 12px 20px;
+        color: #ED2279;
+    }
+
+    header.sticky{
+        padding: 10px 20px;
+    }
+
+    header .navigation{
+        display: none;
+    }
+
+    .navigation.active{
+        z-index: 889;
+        position: fixed;
+        background-color: white;
+        top: 0;
+        right: 0;
+        width: 380px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        box-shadow: 0 5px 25px #ED2279;
+        transition: 0.3s ease;
+    }
+
+    header .navigation a{
+        color: #ED2279;
+        font-size: 1.2em;
+        margin: 10px;
+        padding: 10px 40px;
+        border-radius: 5px;
+    }
+
+    header .navigation a:hover{
+        background-color: #ED2279;
+        color: white;
+        transition: 0.3s ease;
+    }
+
+    .menu-btn{
+        position: absolute;
+        background-position: center;
+        background-size: 30px;
+        background-repeat: no-repeat;
+        width: 40px;
+        height: 40px;
+        right: 0;
+        margin: 0 20px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .menu-btn.active{
+        z-index: 999;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 25px;
+        transition: 0.3s ease;
+        filter: invert(1);
+    }
+}
+    section{
+        padding: 80px 20px;
+    }
+
+    .main .content h2{
+        font-size: 1em;
+    }
+
+    .animated-text h3{
+        font-size: 2.2em;
+    }
+
+    .section-title{
+        font-size: 1.8em;
+    }
+
+    .about .content{
+        flex-direction: column;
+    }
+
+    .about .content .column{
+        width: 100%;
+        position: relative;
+    }
+
+    .about .content .col-right{
+        margin-top: 40px;
+    }
+
+button {
+  background-color: #ED2279;
+  box-shadow: 0 0 40px #ED2279;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center; 
+  font-size: x-large;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+ 
+
+button a {
+    color: white;
+   padding: 8px 14px;
+   text-decoration: none; 
+    
+}
